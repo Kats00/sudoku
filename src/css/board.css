@@ -1,0 +1,45 @@
+@import url("./colors.css");
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  z-index: 2;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 1rem;
+  background-color: var(--Offwhite);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sudoku-board {
+  display: flex;
+  justify-content: center;
+}
+
+.puzzle {
+  border-radius: 1.6%;
+  background-color: var(--Offwhite);
+  overflow: hidden;
+  border: var(--cellBorder) solid var(--Black);
+}
+
+.title {
+  font-size: 3em;
+  font-family: "Delicious Handrawn", cursive;
+  text-align: center;
+  margin-bottom: 1rem;
+}

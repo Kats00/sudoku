@@ -1,0 +1,15 @@
+:root{
+    --backGroundOrange: #F4511E;
+    --backGroundGrey: #546E7A;
+    --backGroundBlue: #1B6B9B;
+    --backGroundGreen: #7CDC1B;
+    --LightBlue100: #B3E5FC;
+    --LightBlue200: #81D4FA;
+    --LightBlue300: #4FC3F7;
+    --Indigo700: #303F9F;
+    --DeepOrange200: #FFAB91;
+    --DeepOrange600: #F4511E;
+    --ControlNumberColor: var(--Indigo700);
+    --Black: #000;
+    --Offwhite: #f1f1f1;
+}

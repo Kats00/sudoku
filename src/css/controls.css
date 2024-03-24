@@ -1,0 +1,50 @@
+.actions-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1em;
+  padding: 0 0.6em;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.action {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  padding: 0.7rem 0;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.action :global(svg) {
+  width: 2.5em;
+  margin-bottom: 0.2em;
+}
+.redo :global(svg) {
+  transform: scaleX(-1);
+}
+
+.action:hover {
+  animation: buttonAction 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes buttonAction {
+  0% {
+    transform: scale(1) rotate(5deg);
+  }
+  50% {
+    transform: scale(1.03) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1) rotate(5deg);
+  }
+}

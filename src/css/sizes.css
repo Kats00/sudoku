@@ -1,0 +1,33 @@
+:root {
+  --cellDimensions: 1.8em;
+  --cellFont: 1.7em;
+  --cellBorder: 0.3px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --cellDimensions: 3rem;
+    --cellFont: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  :root {
+    --cellDimensions: 2em;
+    --cellFont: 1.6em;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  :root {
+    --cellDimensions: 1.7em !important;
+    --cellFont: 1.3em !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  :root {
+    --cellDimensions: 1.2em !important;
+    --cellFont: 1em !important;
+  }
+}

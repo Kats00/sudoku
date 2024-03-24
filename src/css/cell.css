@@ -1,0 +1,64 @@
+@import url("./colors.css");
+@import url("./sizes.css");
+
+.cell {
+  height: var(--cellDimensions);
+  width: var(--cellDimensions);
+  color: var(--ControlNumberColor);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Delicious Handrawn", cursive;
+  justify-content: center;
+  font-size: var(--cellFont);
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+.cell:nth-child(3n + 3):not(:last-child) {
+  border-right: 2px solid var(--Black);
+}
+
+.cell:nth-child(n) {
+  border-bottom: var(--cellBorder) solid var(--Black);
+}
+
+.cell:not(:last-child) {
+  border-right: var(--cellBorder) solid var(--Black);
+}
+.note-number {
+  font-size: 0.6em;
+  width: 33%;
+  height: 33%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row:nth-child(3n):not(:last-child) {
+  border-bottom: 1px solid var(--Black);
+}
+
+.selected-cell {
+  background-color: var(--LightBlue200) !important;
+  color: var(--ControlNumberColor);
+}
+
+.peer {
+  background-color: var(--LightBlue100);
+  color: var(--ControlNumberColor);
+}
+
+.same-value {
+  background-color: var(--LightBlue300);
+  color: var(--Black) !important;
+}
+
+.conflict {
+  background-color: var(--DeepOrange200) !important;
+  color: var(--DeepOrange600) !important;
+}
+
+.prefilled {
+  color: var(--Black) !important;
+}

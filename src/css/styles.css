@@ -1,0 +1,14 @@
+@import url("./sizes.css");
+@import url("./progressBar.css");
+@import url("./App.css");
+@import url("./board.css");
+@import url("./cell.css");
+@import url("./controls.css");
+@import url("./gFonts-Icons.css");
+@import url("./numbers.css");
+@import url("./numbersBackground.css");
+@import url("./colors.css");
+
+html {
+    overflow-x: hidden;
+}
